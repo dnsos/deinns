@@ -125,8 +125,9 @@ body {
   font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; }
+  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: $baseColor;
+  color: $neutralColor; }
 
 
 /* Typography
@@ -134,12 +135,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: .5rem;
-  font-weight: 700; }
+  font-weight: 400;
+  color: $primaryColor; }
 h1, h2 {
-  font-family: 'Bitter';
+  font-family: 'Share Tech Mono';
 }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
-h2 { font-size: 4.0rem; line-height: 1.2; letter-spacing: -.1rem; }
+h2 { font-size: 1.8rem; line-height: 1.5; letter-spacing: -.1rem; }
 h3 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: 0; }
 h4 { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0; }
 h5 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: 0; }
@@ -148,7 +150,7 @@ h6 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: 0; }
 /* Larger than phablet */
 @media (min-width: 750px) {
   h1 { font-size: 3.6rem; }
-  h2 { font-size: 3.6rem; }
+  h2 { font-size: 1.8rem; }
   h3 { font-size: 1.6rem; }
   h4 { font-size: 1.6rem; }
   h5 { font-size: 1.6rem; }
@@ -162,9 +164,14 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #222; }
+  color: $neutralColor;
+  font-style: italic;
+  text-decoration: none;
+  box-shadow: inset 0 -0.8rem 0 darken($baseColor, 10%), 0 .2rem 0 darken($baseColor, 10%);
+  transition: box-shadow .4s;
+  overflow: hidden; }
 a:hover {
-  color: #444; }
+  box-shadow: inset 0 -2.4rem 0 darken($baseColor, 10%), 0 .2rem 0 darken($baseColor, 10%); }
 
 
 /* Buttons
@@ -383,6 +390,14 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+::selection {
+  color: rgb(255, 255, 255);
+  background-color: lighten($neutralColor, 5%); }
+
+::-moz-selection {
+  color: rgb(255, 255, 255);
+  background-color: lighten($neutralColor, 5%); }
+
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -397,8 +412,12 @@ hr {
 
 /* Custom
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.intro:first-child {
+.hi {
   margin-bottom: 0;
+}
+
+.intro, .projects {
+  margin-bottom: 5rem;
 }
 
 
