@@ -1,7 +1,7 @@
 ---
 title: Im überfluteten Berlin
 link: https://imueberflutetenberlin.github.io/
-excerpt: A short description. About the project. Most important infos.
+excerpt: Fictional scenario of climate change presented in an information visualisation.
 date: 07/2017
 category: project
 ---
