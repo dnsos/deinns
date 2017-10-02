@@ -1,13 +1,15 @@
-<section class="row">
-  <section class="four columns">
-    <h2>Projects</h2>
-  </section>
-  <section class="eight columns">
-    <h3><a href="https://imueberflutetenberlin.github.io/" target="_blank">Im überfluteten Berlin</a></h3>
-    <p>A short description. About the project. Most important infos.</p>
-    <h3><a href="https://dnsos.github.io/ritasgeschichte/" target="_blank">Ritas Geschichte</a></h3>
-    <p>A short description. About the project. Most important infos.</p>
-    <h3><a href="http://fhp-campusambulanz.de/" target="_blank">Campusambulanz</a></h3>
-    <p>A short description. About the project. Most important infos.</p>
-  </section>
+<section class="projects">
+
+  <h2>Selected projects</h2>
+
+  {% assign pages = site.pages | sort:"date" | reverse  %}
+    {% for p in pages %}
+
+      {% if p.category == 'project' %}
+      <h3><a href="{{p.link}}" target="_blank">{{p.title}}</a></h3>
+      <p>{{p.excerpt}}</p>
+      {% endif %}
+
+    {% endfor %}
+
 </section>

@@ -1,4 +1,4 @@
-/*
+/* Based on:
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
 * www.getskeleton.com
@@ -6,25 +6,6 @@
 * http://www.opensource.org/licenses/mit-license.php
 * 12/29/2014
 */
-
-
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-- Grid
-- Base Styles
-- Typography
-- Links
-- Buttons
-- Forms
-- Lists
-- Code
-- Tables
-- Spacing
-- Utilities
-- Clearing
-- Media Queries
-*/
-
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -122,10 +103,10 @@ are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: $basicFontSize; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: $neutralFonts;
   background-color: $baseColor;
   color: $neutralColor; }
 
@@ -138,10 +119,10 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: $primaryColor; }
 h1, h2 {
-  font-family: 'Share Tech Mono';
+  font-family: $primaryFonts;
 }
 h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
-h2 { font-size: 1.8rem; line-height: 1.5; letter-spacing: -.1rem; }
+h2 { font-size: $basicFontSize + .2rem; line-height: 1.5; letter-spacing: -.1rem; }
 h3 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: 0; }
 h4 { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0; }
 h5 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: 0; }
@@ -150,7 +131,7 @@ h6 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: 0; }
 /* Larger than phablet */
 @media (min-width: 750px) {
   h1 { font-size: 3.6rem; }
-  h2 { font-size: 1.8rem; }
+  h2 { font-size: $basicFontSize + .2rem; }
   h3 { font-size: 1.6rem; }
   h4 { font-size: 1.6rem; }
   h5 { font-size: 1.6rem; }
@@ -165,6 +146,7 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: $neutralColor;
+  font-size: $basicFontSize;
   font-style: italic;
   text-decoration: none;
   box-shadow: inset 0 -0.8rem 0 darken($baseColor, 10%), 0 .2rem 0 darken($baseColor, 10%);
@@ -172,6 +154,14 @@ a {
   overflow: hidden; }
 a:hover {
   box-shadow: inset 0 -2.4rem 0 darken($baseColor, 10%), 0 .2rem 0 darken($baseColor, 10%); }
+
+a::after {
+  content: url(/img/ic_link.svg);
+  display: inline-block;
+  width: 1.1rem;
+  height: auto;
+  margin-left: .4rem;
+}
 
 
 /* Buttons
@@ -416,8 +406,39 @@ hr {
   margin-bottom: 0;
 }
 
+@media (min-width: 550px) {
+  .hi {
+    position: sticky;
+    top: 80px;
+  }
+}
+
 .intro, .projects {
   margin-bottom: 5rem;
+}
+
+.intro p {
+  font-family: $primaryFonts;
+  font-size: $basicFontSize + .2rem;
+}
+
+.contact {
+  ul, li {
+    margin-bottom: 0;
+  }
+
+  span {
+    font-family: $primaryFonts;
+    color: $primaryColor;
+  }
+}
+
+@media (min-width: 550px) {
+  .contact {
+    position: fixed;
+    bottom: 80px;
+    margin-bottom: 0;
+  }
 }
 
 
