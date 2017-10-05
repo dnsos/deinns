@@ -382,11 +382,11 @@ hr {
 
 ::selection {
   color: rgb(255, 255, 255);
-  background-color: lighten($neutralColor, 5%); }
+  background-color: $primaryColor; }
 
 ::-moz-selection {
   color: rgb(255, 255, 255);
-  background-color: lighten($neutralColor, 5%); }
+  background-color: $primaryColor; }
 
 
 /* Clearing
