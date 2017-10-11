@@ -1,7 +1,7 @@
 ---
 title: Campusambulanz
 link: http://fhp-campusambulanz.de/
-excerpt: Restructured the websites code to make it responsive.
+excerpt: Information portal for incoming students (optimisation for mobile devices).
 date: 01/2017
 category: project
 ---
