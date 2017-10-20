@@ -422,6 +422,19 @@ hr {
   font-size: $basicFontSize + .2rem;
 }
 
+.projects p.excerpt {
+  margin-bottom: 0;
+}
+
+.projects p.role {
+  font-family: $primaryFonts;
+}
+
+.projects p.role::before {
+  content: '- ';
+  color: $primaryColor;
+}
+
 .contact {
   ul, li {
     margin-bottom: 0;
