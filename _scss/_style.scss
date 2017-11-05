@@ -101,8 +101,11 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  border-left: 12px solid white;
+  border-right: 12px solid white; }
 body {
+  min-height: 100vh;
   font-size: $basicFontSize; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -149,11 +152,11 @@ a {
   font-size: $basicFontSize;
   font-style: italic;
   text-decoration: none;
-  box-shadow: inset 0 -0.8rem 0 darken($baseColor, 10%), 0 .2rem 0 darken($baseColor, 10%);
+  box-shadow: inset 0 -0.8rem 0 lighten($baseColor, 10%), 0 .2rem 0 lighten($baseColor, 10%);
   transition: box-shadow .4s;
   overflow: hidden; }
 a:hover {
-  box-shadow: inset 0 -2.4rem 0 darken($baseColor, 10%), 0 .2rem 0 darken($baseColor, 10%); }
+  box-shadow: inset 0 -2.4rem 0 lighten($baseColor, 10%), 0 .2rem 0 lighten($baseColor, 10%); }
 
 a::after {
   content: url($baseurl + "/img/ic_link.svg");
