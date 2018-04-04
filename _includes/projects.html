@@ -1,16 +1,8 @@
-<section class="projects">
+<section class="row">
 
-  <h2>Selected projects</h2>
+  <section class="three columns"></section>
 
-  {% assign pages = site.pages | sort:"date" | reverse  %}
-    {% for p in pages %}
-
-      {% if p.category == 'project' %}
-      <h3><a href="{{p.link}}" target="_blank">{{p.title}}</a></h3>
-      <p class="excerpt">{{p.excerpt}}</p>
-      <p class="role">{{p.role}}</p>
-      {% endif %}
-
-    {% endfor %}
-
+  <section class="three columns">Leuchttisch</section>
+  <section class="three columns">RITA</section>
+  <section class="three columns">Im überfluteten Berlin</section>
 </section>
