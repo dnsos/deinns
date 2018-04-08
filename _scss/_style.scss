@@ -120,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1.2rem;
   font-weight: 400;
   color: $neutralColor; }
-h1, h2 {
+h1, h2, p {
   font-family: $primaryFonts;
   span {
     box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 white;
@@ -155,7 +155,7 @@ a {
   font-style: italic;
   text-decoration: none;
   box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 $secondaryColor;
-  transition: box-shadow .4s;
+  transition: box-shadow .2s;
   overflow: hidden; }
 a:hover {
   box-shadow: inset 0 -0.8rem 0 $secondaryColor, 0 .2rem 0 $secondaryColor; }
@@ -434,15 +434,67 @@ hr {
   }
 }
 
+.about p {
+  font-weight: 700;
+  color: $primaryColor;
+}
 
 .project__wrapper {
   position: relative;
   display: inline-block;
   width: 100%;
   background-color: $primaryColor;
+
+  .project__image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 2;
+    transition: opacity .2s;
+  }
+
+  .project__title {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+
+    h2 {
+      padding-top: .8rem;
+      text-align: center;
+    }
+  }
+
+  .project__excerpt {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 3;
+
+    p {
+      display: block;
+      margin: 0 auto;
+      font-size: $basicFontSize - .2rem;
+      text-align: center;
+
+      span {
+        display: inline;
+        padding: .2rem .5rem;
+        background-color: $baseColor;
+        box-shadow: none;
+        vertical-align: baseline;
+      }
+    }
+  }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 400px) {
+  .project__wrapper {
+    width: 48%;
+  }
+}
+
+@media (min-width: 750px) {
   .project__wrapper {
     width: 30%;
   }
@@ -454,15 +506,24 @@ hr {
     padding-bottom: 100%;
 }
 
-.project__content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.project__wrapper:hover {
+  cursor: pointer;
+}
 
-  h2 {
-    padding-top: .8rem;
-    text-align: center;
-  }
+.project__image:hover {
+  opacity: .5;
+}
+
+#project__leuchttisch--preview {
+  background-image: url("/img/project_leuchttisch_preview.png");
+}
+
+#project__rita--preview {
+  background-image: url("/img/project_rita_preview.png");
+}
+
+#project__iub--preview {
+  background-image: url("/img/project_iub_preview.png");
 }
 
 
