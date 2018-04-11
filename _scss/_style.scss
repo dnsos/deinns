@@ -102,7 +102,7 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%;
-  border: 12px solid white; }
+  /* border: 12px solid white; */ }
 body {
   min-height: 100vh;
   font-size: $basicFontSize; /* currently ems cause chrome bug misinterpreting rems on body element */
@@ -407,9 +407,20 @@ hr {
   margin-bottom: 5rem;
 }
 
+.about span {
+  box-shadow: none;
+}
+
 .intro p {
   font-family: $primaryFonts;
   font-size: $basicFontSize;
+}
+
+@media (min-width: 750px) {
+  .intro--sticky {
+    position: sticky;
+    top: 80px;
+  }
 }
 
 .contact {
@@ -438,7 +449,9 @@ hr {
   position: relative;
   display: inline-block;
   width: 100%;
+  margin: 0;
   background-color: $primaryColor;
+  clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
 
   .project__image {
     position: absolute;
@@ -475,6 +488,7 @@ hr {
       span {
         display: inline;
         padding: .2rem .6rem;
+        font-style: normal;
         background-color: $baseColor;
         box-shadow: none;
         vertical-align: baseline;
@@ -485,7 +499,7 @@ hr {
 
 @media (min-width: 400px) {
   .project__wrapper {
-    width: 48%;
+    width: 47.33%;
   }
 }
 
@@ -505,13 +519,9 @@ hr {
   cursor: pointer;
 
   .project__image {
-    opacity: .5;
+    opacity: .75;
   }
 }
-
-/*.project__image:hover {
-  opacity: .8;
-} */
 
 .project__anchor {
   position: absolute;
@@ -533,6 +543,11 @@ a.project__anchor {
 
 #project__iub--preview {
   background-image: url("/img/project_iub_preview.png");
+}
+
+.project__detail--wrapper {
+  padding: 2rem;
+  background-color: white;
 }
 
 
