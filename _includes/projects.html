@@ -1,8 +1,26 @@
-<section class="row">
+<h2>Selected works:</h2>
 
-  <section class="three columns"></section>
+<section>
 
-  <section class="three columns">Leuchttisch</section>
-  <section class="three columns">RITA</section>
-  <section class="three columns">Im überfluteten Berlin</section>
+  {% assign pages = site.pages %}
+      {% for p in pages %}
+
+        {% if p.tag == 'project' %}
+
+          <section class="project__wrapper">
+            <a href="{{p.permalink}}" class="project__anchor">
+              <section class="project__title">
+                <h2><span href="{{p.permalink}}">{{p.title}}</span></h2>
+              </section>
+              <section class="project__excerpt">
+                <p><span>{{p.excerpt}}</span></p>
+              </section>
+              <section class="project__image" id="project__{{p.ref}}--preview"></section>
+            </a>
+          </section>
+
+        {% endif %}
+
+      {% endfor %}
+
 </section>

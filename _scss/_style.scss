@@ -434,11 +434,6 @@ hr {
   }
 }
 
-.about p {
-  font-weight: 700;
-  color: $primaryColor;
-}
-
 .project__wrapper {
   position: relative;
   display: inline-block;
@@ -479,7 +474,7 @@ hr {
 
       span {
         display: inline;
-        padding: .2rem .5rem;
+        padding: .2rem .6rem;
         background-color: $baseColor;
         box-shadow: none;
         vertical-align: baseline;
@@ -496,7 +491,7 @@ hr {
 
 @media (min-width: 750px) {
   .project__wrapper {
-    width: 30%;
+    width: 30.333%;
   }
 }
 
@@ -508,10 +503,24 @@ hr {
 
 .project__wrapper:hover {
   cursor: pointer;
+
+  .project__image {
+    opacity: .5;
+  }
 }
 
-.project__image:hover {
-  opacity: .5;
+/*.project__image:hover {
+  opacity: .8;
+} */
+
+.project__anchor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+a.project__anchor {
+  box-shadow: none;
 }
 
 #project__leuchttisch--preview {

@@ -1,8 +1,11 @@
 ---
 title: Im überfluteten Berlin
-link: https://imueberflutetenberlin.github.io/
-excerpt: Interactive map of a Berlin fictionally endangered by climate change.
-date: 07/2017
-category: project
-role: Concept, Design, Development
+subtitle: (Flooded Berlin)
+ref: iub
+permalink: "/projects/flooded-berlin/"
+tag: project
+excerpt: Interactive map
+external-link: https://imueberflutetenberlin.github.io/
+year: 2017
+role: research, concept, design, web development
 ---

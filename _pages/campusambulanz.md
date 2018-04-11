@@ -1,8 +1,11 @@
 ---
 title: Campusambulanz
-link: http://fhp-campusambulanz.de/
-excerpt: Information portal for incoming students.
-date: 01/2017
-category: project
-role: Development
+subtitle: Website
+ref: ca
+permalink: "/projects/campusambulanz/"
+tag: project
+excerpt: Information portal
+external-link: http://fhp-campusambulanz.de/
+year: 2017
+role: web development / in collaboration with Jonas Köpfer
 ---
