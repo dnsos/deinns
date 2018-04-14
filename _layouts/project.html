@@ -5,6 +5,16 @@ layout: default
 
 <section class="project__detail--wrapper">
 
-  {{content}}
+  <section class="project__detail--meta">
+    <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
+    <ul>
+      <li><span>Year: </span>{{page.year}}</li>
+      <li><span>Role: </span>{{page.role}}</li>
+    </ul>
+  </section>
+
+  <section class="project__detail--content">
+    {{content}}
+  </section>
 
 </section>
