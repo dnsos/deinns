@@ -104,7 +104,6 @@ html {
   font-size: 62.5%;
   /* border: 12px solid white; */ }
 body {
-  min-height: 100vh;
   font-size: $basicFontSize; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
@@ -117,7 +116,7 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.5rem;
   font-weight: 700;
   color: $neutralColor;
 
@@ -411,13 +410,19 @@ hr {
   box-shadow: none;
 }
 
-.intro p {
-  font-family: $primaryFonts;
-  font-size: $basicFontSize;
-
-  span {
-    box-shadow: $underlined;
+.intro {
+  h1 {
+    margin-bottom: 1.25rem;
   }
+  p {
+   font-family: $primaryFonts;
+   font-size: $basicFontSize;
+
+   span {
+     box-shadow: $underlined;
+   }
+ }
+
 }
 
 @media (min-width: 750px) {
@@ -449,13 +454,17 @@ hr {
   }
 }
 
+.projects__grid {
+  margin-bottom: 30rem;
+}
+
 .project__wrapper {
   position: relative;
   display: inline-block;
   width: 100%;
   margin: 0;
   background-color: $primaryColor;
-  clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+  // clip-path: polygon(3% 0%, 97% 0%, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0% 97%, 0% 3%);
 
   .project__image {
     position: absolute;
@@ -472,6 +481,10 @@ hr {
     padding-top: .8rem;
     text-align: center;
     z-index: 3;
+
+    h3 {
+      font-weight: 400;
+    }
   }
 
   .project__excerpt {
@@ -546,6 +559,10 @@ a.project__anchor {
   background-image: url("/img/project_iub_preview.png");
 }
 
+#project__various--preview {
+  background-image: url("/img/project_various_preview.png");
+}
+
 .project__detail--wrapper {
   padding: 2rem;
   background-color: white;
@@ -561,6 +578,15 @@ a.project__anchor {
       padding: 0 10%;
       text-align: center;
       font-style: italic;
+    }
+
+    p.to-overview {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
     }
   }
 }

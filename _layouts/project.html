@@ -8,13 +8,16 @@ layout: default
   <section class="project__detail--meta">
     <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
     <ul>
+      {% if page.subtitle %}<li><span>Link: </span><a href="https://{{page.external-link}}" target="_blank">{{page.external-link}}</a></li>{% endif %}
       <li><span>Year: </span>{{page.year}}</li>
       <li><span>Role: </span>{{page.role}}</li>
+      {% if page.team %}<li><span>Team: </span>{{page.team}}</li>{% endif %}
     </ul>
   </section>
 
   <section class="project__detail--content">
     {{content}}
+    <p class="to-overview"><a href="/{{site.baseurl}}">Back to overview</a></p>
   </section>
 
 </section>
