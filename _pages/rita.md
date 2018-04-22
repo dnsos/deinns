@@ -32,6 +32,6 @@ Each chapter consists of a fictional plot, integrating one or more actual circum
 
 ![RITA: Illustrations](/img/rita_illustrations.png)
 
-The project was publicised in different ways. By the end of
+The project was publicised in different ways. Its framing class concluded with a public presentation in Berlin. Present were experts from the fields of design, biology, agriculture and more. RITA's story was presented as a reading with a subsequent discussion on ethical and other relevant considerations.
 
-In order to also display the project for the exhibitions "Werkschau" and "Lange Nacht der Wissenschaften" the story was also printed on posters and partly on flyers.
+In order to also display the project in the exhibitions [WERKSCHAU](https://fhp-werkschau.de/) and [Lange Nacht der Wissenschaften](https://www.langenachtderwissenschaften.de/) the story was printed on posters and partly on flyers. The [website](https://dnsos.github.io/ritasgeschichte/en) documents RITA's story and the project.
