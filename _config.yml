@@ -2,7 +2,7 @@ encoding: utf-8
 highlighter: rouge
 baseurl: /me
 include: ["_pages"]
-exclude: ['README.md']
+exclude: ['README.md', 'campusambulanz.md']
 permalink: pretty
 sass:
   sass_dir: _scss

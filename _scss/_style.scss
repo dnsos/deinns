@@ -31,7 +31,7 @@
 }
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
+@media (min-width: 700px) {
   .container {
     width: 80%; }
   .column,
@@ -102,14 +102,12 @@ html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
   font-size: 62.5%;
-  border-left: 12px solid white;
-  border-right: 12px solid white; }
+  /* border: 12px solid white; */ }
 body {
-  min-height: 100vh;
   font-size: $basicFontSize; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
   font-weight: 400;
-  font-family: $neutralFonts;
+  font-family: $primaryFonts;
   background-color: $baseColor;
   color: $neutralColor; }
 
@@ -118,27 +116,30 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: .5rem;
-  font-weight: 400;
-  color: $primaryColor; }
-h1, h2 {
-  font-family: $primaryFonts;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  color: $neutralColor;
+
+  span {
+    box-shadow: $underlined;
+  }
 }
-h1 { font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
-h2 { font-size: $basicFontSize + .2rem; line-height: 1.5; letter-spacing: -.1rem; }
-h3 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: 0; }
-h4 { font-size: 1.6rem; line-height: 1.5; letter-spacing: 0; }
-h5 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: 0; }
-h6 { font-size: 1.6rem; line-height: 1.5;  letter-spacing: 0; }
+
+h1 { font-size: $basicFontSize; line-height: 1.6;  letter-spacing: 0;}
+h2 { font-size: $basicFontSize; line-height: 1.6; letter-spacing: 0; }
+h3 { font-size: $basicFontSize; line-height: 1.6;  letter-spacing: 0; }
+h4 { font-size: $basicFontSize; line-height: 1.6; letter-spacing: 0; }
+h5 { font-size: $basicFontSize; line-height: 1.6;  letter-spacing: 0; }
+h6 { font-size: $basicFontSize; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
 @media (min-width: 750px) {
-  h1 { font-size: 3.6rem; }
-  h2 { font-size: $basicFontSize + .2rem; }
-  h3 { font-size: 1.6rem; }
-  h4 { font-size: 1.6rem; }
-  h5 { font-size: 1.6rem; }
-  h6 { font-size: 1.6rem; }
+  h1 { font-size: $basicFontSize; }
+  h2 { font-size: $basicFontSize; }
+  h3 { font-size: $basicFontSize; }
+  h4 { font-size: $basicFontSize; }
+  h5 { font-size: $basicFontSize; }
+  h6 { font-size: $basicFontSize; }
 }
 
 p {
@@ -152,19 +153,11 @@ a {
   font-size: $basicFontSize;
   font-style: italic;
   text-decoration: none;
-  box-shadow: inset 0 -0.8rem 0 lighten($baseColor, 10%), 0 .2rem 0 lighten($baseColor, 10%);
-  transition: box-shadow .4s;
+  box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 $secondaryColor;
+  transition: box-shadow .2s;
   overflow: hidden; }
 a:hover {
-  box-shadow: inset 0 -2.4rem 0 lighten($baseColor, 10%), 0 .2rem 0 lighten($baseColor, 10%); }
-
-a::after {
-  content: url($baseurl + "/img/ic_link.svg");
-  display: inline-block;
-  width: 1.1rem;
-  height: auto;
-  margin-left: .4rem;
-}
+  box-shadow: inset 0 -0.8rem 0 $secondaryColor, 0 .2rem 0 $secondaryColor; }
 
 
 /* Buttons
@@ -405,37 +398,38 @@ hr {
 
 /* Custom
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.hi {
-  margin-bottom: 0;
+.headline--highlighted {
+  font-weight: 700;
 }
 
-@media (min-width: 550px) {
-  .hi {
-    position: sticky;
-    top: 80px;
-  }
-}
-
-.intro, .projects {
+.intro, .contact, .about {
   margin-bottom: 5rem;
 }
 
-.intro p {
-  font-family: $primaryFonts;
-  font-size: $basicFontSize + .2rem;
+.about span {
+  box-shadow: none;
 }
 
-.projects p.excerpt {
-  margin-bottom: 0;
+.intro {
+  h1 {
+    margin-bottom: 1.25rem;
+  }
+  p {
+   font-family: $primaryFonts;
+   font-size: $basicFontSize;
+
+   span {
+     box-shadow: $underlined;
+   }
+ }
+
 }
 
-.projects p.role {
-  font-family: $primaryFonts;
-}
-
-.projects p.role::before {
-  content: '- ';
-  color: $primaryColor;
+@media (min-width: 750px) {
+  .intro--sticky {
+    position: sticky;
+    top: 80px;
+  }
 }
 
 .contact {
@@ -443,23 +437,157 @@ hr {
     margin-bottom: 0;
   }
 
-  span {
-    font-family: $primaryFonts;
-    color: $primaryColor;
+  .contact--mail:before,
+  .contact--github:before {
+    display: inline-block;
+    width: 1.5rem;
+    margin-right: .5rem;
+    transform: translateY(.4rem);
+  }
+
+  .contact--mail:before {
+    content: url(/img/ic_mail.svg);
+  }
+
+  .contact--github:before {
+    content: url(/img/ic_github.svg);
   }
 }
 
-@media (min-width: 550px) {
-  .contact {
-    position: fixed;
-    bottom: 80px;
-    margin-bottom: 0;
-  }
+.projects__grid {
+  margin-bottom: 30rem;
 }
 
-@media (max-height: 350px) {
-  .contact {
+.project__wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  background-color: $secondaryColor;
+  // clip-path: polygon(3% 0%, 97% 0%, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0% 97%, 0% 3%);
+
+  .project__image {
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 2;
+    transition: opacity .2s;
+  }
+
+  .project__title {
+    position: absolute;
+    width: 100%;
+    padding-top: .8rem;
+    text-align: center;
+    z-index: 3;
+
+    h3 {
+      font-weight: 400;
+    }
+  }
+
+  .project__excerpt {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 3;
+
+    p {
+      display: block;
+      margin: 0 auto;
+      font-size: $basicFontSize - .2rem;
+      text-align: center;
+
+      span {
+        display: inline;
+        padding: .2rem .6rem;
+        font-style: normal;
+        background-color: $baseColor;
+        box-shadow: none;
+        vertical-align: baseline;
+      }
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .project__wrapper {
+    width: 47.33%;
+  }
+}
+
+@media (min-width: 750px) {
+  .project__wrapper {
+    width: 30.333%;
+  }
+}
+
+.project__wrapper:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.project__wrapper:hover {
+  cursor: pointer;
+
+  .project__image {
+    opacity: .5;
+  }
+}
+
+.project__anchor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+a.project__anchor {
+  box-shadow: none;
+}
+
+#project__leuchttisch--preview {
+  background-image: url("/img/project_leuchttisch_preview.png");
+}
+
+#project__rita--preview {
+  background-image: url("/img/project_rita_preview.png");
+}
+
+#project__iub--preview {
+  background-image: url("/img/project_iub_preview.png");
+}
+
+#project__various--preview {
+  background-image: url("/img/project_various_preview.png");
+}
+
+.project__detail--wrapper {
+  padding: 2rem;
+  background-color: white;
+
+  .project__detail--meta {
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .project__detail--content {
+    p:first-of-type {
+      padding: 0 10%;
+      text-align: center;
+      font-style: italic;
+    }
+
+    p.to-overview {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 

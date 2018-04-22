@@ -1,16 +1,26 @@
-<section class="projects">
+<h2>Selected works:</h2>
 
-  <h2>Selected projects</h2>
+<section class="projects__grid">
 
-  {% assign pages = site.pages | sort:"date" | reverse  %}
-    {% for p in pages %}
+  {% assign pages = site.pages %}
+      {% for p in pages %}
 
-      {% if p.category == 'project' %}
-      <h3><a href="{{p.link}}" target="_blank">{{p.title}}</a></h3>
-      <p class="excerpt">{{p.excerpt}}</p>
-      <p class="role">{{p.role}}</p>
-      {% endif %}
+        {% if p.tag == 'project' %}
 
-    {% endfor %}
+          <section class="project__wrapper">
+            <a href="{{p.permalink}}" class="project__anchor">
+              <section class="project__title">
+                <h3><span href="{{p.permalink}}">{{p.title}}</span></h3>
+              </section>
+              <section class="project__excerpt">
+                <p><span>{{p.excerpt}}</span></p>
+              </section>
+              <section class="project__image" id="project__{{p.ref}}--preview"></section>
+            </a>
+          </section>
+
+        {% endif %}
+
+      {% endfor %}
 
 </section>
