@@ -548,19 +548,19 @@ a.project__anchor {
 }
 
 #project__leuchttisch--preview {
-  background-image: url("/img/project_leuchttisch_preview.png");
+  background-image: url("{{site.baseurl}}/img/project_leuchttisch_preview.png");
 }
 
 #project__rita--preview {
-  background-image: url("/img/project_rita_preview.png");
+  background-image: url("{{site.baseurl}}/img/project_rita_preview.png");
 }
 
 #project__iub--preview {
-  background-image: url("/img/project_iub_preview.png");
+  background-image: url("{{site.baseurl}}/img/project_iub_preview.png");
 }
 
 #project__various--preview {
-  background-image: url("/img/project_various_preview.png");
+  background-image: url("{{site.baseurl}}/img/project_various_preview.png");
 }
 
 .project__detail--wrapper {
