@@ -1,2 +1,3 @@
-# me
-My portfolio
+# Portfolio
+
+jekyll serve
