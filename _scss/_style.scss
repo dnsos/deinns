@@ -1,11 +1,19 @@
-/* Based on:
-* Skeleton V2.0.4
-* Copyright 2014, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 12/29/2014
-*/
+:root {
+  // colors
+  --baseColor: rgb(238, 238, 238);
+  --neutralColor: rgb(100, 100, 100);
+  --primaryColor: rgb(0, 204, 92);
+  --secondaryColor: rgb(169, 255, 190);
+
+  // fonts
+  --neutralFonts: 'Open Sans', Arial, sans-serif;
+  --primaryFonts: 'Roboto', Arial, sans-serif;
+
+  // misc
+  --basicFontSize: 1.5rem;
+  --headingFontSize: 1.8rem;
+  --underlined: inset 0 -0.8rem 0 white, 0 .2rem 0 white;
+}
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -97,19 +105,15 @@
 
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-/* NOTE
-html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%;
-  /* border: 12px solid white; */ }
+  font-size: 62.5%; }
 body {
-  font-size: $basicFontSize; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: var(--basicFontSize);
   line-height: 1.6;
   font-weight: 400;
-  font-family: $primaryFonts;
+  font-family: var(--primaryFonts);
   background-color: white;
-  color: $neutralColor; }
+  color: var(--neutralColor); }
 
 
 /* Typography
@@ -118,28 +122,28 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2.5rem;
   font-weight: 700;
-  color: $neutralColor;
+  color: var(--neutralColor);
 
   span {
-    box-shadow: $underlined;
+    box-shadow: var(--underlined);
   }
 }
 
-h1 { font-size: $basicFontSize + .3rem; line-height: 1.6;  letter-spacing: 0;}
-h2 { font-size: $basicFontSize; line-height: 1.6; letter-spacing: 0; }
-h3 { font-size: $basicFontSize; line-height: 1.6;  letter-spacing: 0; }
-h4 { font-size: $basicFontSize; line-height: 1.6; letter-spacing: 0; }
-h5 { font-size: $basicFontSize; line-height: 1.6;  letter-spacing: 0; }
-h6 { font-size: $basicFontSize; line-height: 1.6;  letter-spacing: 0; }
+h1 { font-size: var(--headingFontSize); line-height: 1.6;  letter-spacing: 0;}
+h2 { font-size: var(--basicFontSize); line-height: 1.6; letter-spacing: 0; }
+h3 { font-size: var(--basicFontSize); line-height: 1.6;  letter-spacing: 0; }
+h4 { font-size: var(--basicFontSize); line-height: 1.6; letter-spacing: 0; }
+h5 { font-size: var(--basicFontSize); line-height: 1.6;  letter-spacing: 0; }
+h6 { font-size: var(--basicFontSize); line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
 @media (min-width: 750px) {
-  h1 { font-size: $basicFontSize + .3rem; }
-  h2 { font-size: $basicFontSize; }
-  h3 { font-size: $basicFontSize; }
-  h4 { font-size: $basicFontSize; }
-  h5 { font-size: $basicFontSize; }
-  h6 { font-size: $basicFontSize; }
+  h1 { font-size: var(--headingFontSize); }
+  h2 { font-size: var(--basicFontSize); }
+  h3 { font-size: var(--basicFontSize); }
+  h4 { font-size: var(--basicFontSize); }
+  h5 { font-size: var(--basicFontSize); }
+  h6 { font-size: var(--basicFontSize); }
 }
 
 p {
@@ -149,15 +153,15 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: $neutralColor;
-  font-size: $basicFontSize;
+  color: var(--neutralColor);
+  font-size: var(--basicFontSize);
   font-style: italic;
   text-decoration: none;
-  box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 $secondaryColor;
+  box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 var(--secondaryColor);
   transition: box-shadow .2s;
   overflow: hidden; }
 a:hover {
-  box-shadow: inset 0 -0.8rem 0 $secondaryColor, 0 .2rem 0 $secondaryColor; }
+  box-shadow: inset 0 -0.8rem 0 var(--secondaryColor), 0 .2rem 0 var(--secondaryColor); }
 
 
 /* Buttons
@@ -378,11 +382,11 @@ hr {
 
 ::selection {
   color: rgb(255, 255, 255);
-  background-color: $primaryColor; }
+  background-color: var(--primaryColor); }
 
 ::-moz-selection {
   color: rgb(255, 255, 255);
-  background-color: $primaryColor; }
+  background-color: var(--primaryColor); }
 
 
 /* Clearing
@@ -415,11 +419,11 @@ hr {
     margin-bottom: 1.25rem;
   }
   p {
-   font-family: $primaryFonts;
-   font-size: $basicFontSize;
+   font-family: var(--primaryFonts);
+   font-size: var(--basicFontSize);
 
    span {
-     box-shadow: $underlined;
+     box-shadow: var(--underlined);
    }
    a {
      font-style: normal;
@@ -466,7 +470,7 @@ hr {
   display: inline-block;
   width: 100%;
   margin: 0;
-  background-color: $secondaryColor;
+  background-color: var(--secondaryColor);
   // clip-path: polygon(3% 0%, 97% 0%, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0% 97%, 0% 3%);
 
   .project__image {
@@ -499,7 +503,7 @@ hr {
     p {
       display: block;
       margin: 0 auto;
-      font-size: $basicFontSize - .2rem;
+      font-size: calc(var(--basicFontSize) - 0.2rem);
       text-align: center;
 
       span {
@@ -592,29 +596,3 @@ a.project__anchor {
     }
   }
 }
-
-
-/* Media Queries
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-/*
-Note: The best way to structure the use of media queries is to create the queries
-near the relevant code. For example, if you wanted to change the styles for buttons
-on small devices, paste the mobile query code up in the buttons section and style it
-there.
-*/
-
-
-/* Larger than mobile */
-@media (min-width: 400px) {}
-
-/* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
-
-/* Larger than tablet */
-@media (min-width: 750px) {}
-
-/* Larger than desktop */
-@media (min-width: 1000px) {}
-
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
