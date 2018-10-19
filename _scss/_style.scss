@@ -467,15 +467,16 @@ hr {
   position: relative;
   display: inline-block;
   width: 100%;
-  margin: 0;
-  background-color: var(--primaryColor);
-  // clip-path: polygon(3% 0%, 97% 0%, 100% 3%, 100% 97%, 97% 100%, 3% 100%, 0% 97%, 0% 3%);
+  height: 150px;
+  margin-bottom: 2rem;
+  background-color: white;
 
   .project__image {
     position: absolute;
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-position: center;
     z-index: 2;
     transition: opacity .2s;
   }
@@ -518,13 +519,14 @@ hr {
 
 @media (min-width: 400px) {
   .project__wrapper {
-    width: 47.33%;
+    width: 100%;
+    height: 150px;
   }
 }
 
 @media (min-width: 750px) {
   .project__wrapper {
-    width: 30.333%;
+    width: 100%;
   }
 }
 
@@ -552,20 +554,16 @@ a.project__anchor {
   box-shadow: none;
 }
 
-#project__leuchttisch--preview {
-  background-image: url("/me/img/project_leuchttisch_preview.png");
-}
-
 #project__rita--preview {
-  background-image: url("/me/img/project_rita_preview.png");
+  background-image: url("/me/img/project_rita_preview_new.png");
 }
 
 #project__iub--preview {
-  background-image: url("/me/img/project_iub_preview.png");
+  background-image: url("/me/img/project_iub_preview_new.png");
 }
 
 #project__various--preview {
-  background-image: url("/me/img/project_various_preview.png");
+  background-image: url("/me/img/project_various_preview_new.png");
 }
 
 .project__detail--wrapper {
