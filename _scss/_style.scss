@@ -6,7 +6,6 @@
 
   // fonts
   --neutralFonts: 'Open Sans', Arial, sans-serif;
-  --primaryFonts: 'Roboto', Arial, sans-serif;
 
   // misc
   --basicFontSize: 1.5rem;
@@ -21,7 +20,7 @@
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 20px 0;
+  padding: 20px 20px 0;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -110,7 +109,7 @@ body {
   font-size: var(--basicFontSize);
   line-height: 1.6;
   font-weight: 400;
-  font-family: var(--primaryFonts);
+  font-family: var(--neutralFonts);
   background-color: white;
   color: var(--neutralColor); }
 
@@ -418,7 +417,7 @@ hr {
     margin-bottom: 1.25rem;
   }
   p {
-   font-family: var(--primaryFonts);
+   font-family: var(--neutralFonts);
    font-size: var(--basicFontSize);
 
    span {
