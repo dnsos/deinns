@@ -10,7 +10,7 @@
   // misc
   --basicFontSize: 1.5rem;
   --headingFontSize: 1.8rem;
-  --underlined: inset 0 -0.8rem 0 white, 0 .2rem 0 white;
+  --underlined: inset 0 -2rem 0 white, 0 .2rem 0 white;
 }
 
 /* Grid
@@ -489,7 +489,12 @@ hr {
     z-index: 3;
 
     h3 {
-      font-weight: 400;
+      font-style: normal;
+      font-size: calc(var(--basicFontSize) - 0.2rem);
+
+      span {
+        padding: 0 .4rem;
+      }
     }
   }
 
@@ -552,6 +557,14 @@ hr {
 
 a.project__anchor {
   box-shadow: none;
+}
+
+#project__vks--preview {
+  background-image: url("/me/img/project_vks_preview_new.png");
+}
+
+#project__leuchttisch--preview {
+  background-image: url("/me/img/project_leuchttisch_preview_new.png");
 }
 
 #project__rita--preview {

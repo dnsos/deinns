@@ -5,7 +5,7 @@ subtitle:
 ref: various
 permalink: "/works/various-works/"
 tag: project
-excerpt: University projects
+excerpt: University Projects
 external-link:
 year: 2015/2016
 role: Concept, Design

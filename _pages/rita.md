@@ -5,10 +5,10 @@ subtitle: the story of an egg-worker
 ref: rita
 permalink: "/works/rita/"
 tag: project
-excerpt: Illustrated short story
+excerpt: Illustrated Short Story
 external-link: dnsos.github.io/ritasgeschichte/en
 year: 2016/2017
-role: Research, Concept, Illustration, Web development
+role: Research, Concept, Illustration, Web Development
 team: Marlo Tristan Probst (Research)
 ---
 
