@@ -13,7 +13,7 @@ team:
 order: 1
 ---
 
-Collected here are works that I developed as part of university courses over the last years.
+Collected here are works that I developed as part of university courses in 2015 and 2016.
 
 ## NON VERBAL EXPLANATION OF A PROCESS
 The challenge of this project was to visualise a complex process without using text. I worked with the concept of writing and sending a _PGP_ encrypted mail.

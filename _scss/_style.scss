@@ -475,7 +475,8 @@ hr {
 }
 
 .projects__grid {
-  margin-bottom: 30rem;
+  margin-bottom: 0rem;
+  overflow: hidden;
   animation: fadein 1.5s;
 }
 
