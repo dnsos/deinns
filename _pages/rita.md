@@ -10,6 +10,7 @@ external-link: dnsos.github.io/ritasgeschichte/en
 year: 2016/2017
 role: Research, Concept, Illustration, Web Development
 team: Marlo Tristan Probst (Research)
+order: 2
 ---
 
 Told in this project is the story of Rita, a laying hen who experiences the different forms of the egg industry. But Rita is no regular „egg-worker“. Little by little, she discovers her own basic instincts and does not hesitate to fight for them.

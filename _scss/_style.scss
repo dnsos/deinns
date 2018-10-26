@@ -408,8 +408,17 @@ hr {
   margin-bottom: 5rem;
 }
 
-.about span {
-  box-shadow: none;
+.about {
+  padding: 2rem;
+  border: .1rem solid var(--primaryColor);
+
+  p {
+    margin-bottom: 0;
+  }
+
+  span {
+    box-shadow: none;
+  }
 }
 
 .intro {
@@ -438,6 +447,7 @@ hr {
 }
 
 .contact {
+
   ul, li {
     margin-bottom: 0;
   }
@@ -461,6 +471,7 @@ hr {
 
 .projects__grid {
   margin-bottom: 30rem;
+  animation: fadein 1.5s;
 }
 
 .project__wrapper {
@@ -581,6 +592,12 @@ a.project__anchor {
 
 .project__detail--wrapper {
   background-color: white;
+  animation: fadein 1.5s;
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 
   .project__detail--meta {
     span {

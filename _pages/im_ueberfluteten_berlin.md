@@ -8,7 +8,8 @@ tag: project
 excerpt: Interactive Map
 external-link: imueberflutetenberlin.github.io
 year: 2017
-role: Research, Concept, Design, Web Vevelopment
+role: Research, Concept, Design, Web Development
+order: 3
 ---
 
 The sea level rise caused by climate change endangers cities, regions and whole countries everywhere in the world. Germany is barely, its capital Berlin not at all, affected. But what if Berlin was fictionally transferred to a coastal area, affected by sea level rise?
