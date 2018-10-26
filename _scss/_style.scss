@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: var(--headingFontSize); line-height: 1.6;  letter-spacing: 0;}
-h2 { font-size: calc(var(--headingFontSize) - .4rem); line-height: 1.6; letter-spacing: 0; }
+h2 { font-size: var(--basicFontSize); line-height: 1.6; letter-spacing: 0; }
 h3 { font-size: var(--basicFontSize); line-height: 1.6;  letter-spacing: 0; }
 h4 { font-size: var(--basicFontSize); line-height: 1.6; letter-spacing: 0; }
 h5 { font-size: var(--basicFontSize); line-height: 1.6;  letter-spacing: 0; }
@@ -136,7 +136,7 @@ h6 { font-size: var(--basicFontSize); line-height: 1.6;  letter-spacing: 0; }
 /* Larger than phablet */
 @media (min-width: 750px) {
   h1 { font-size: var(--headingFontSize); }
-  h2 { font-size: calc(var(--headingFontSize) - .4rem); }
+  h2 { font-size: var(--basicFontSize); }
   h3 { font-size: var(--basicFontSize); }
   h4 { font-size: var(--basicFontSize); }
   h5 { font-size: var(--basicFontSize); }
@@ -403,12 +403,12 @@ hr {
   font-weight: 700;
 }
 
-.intro, .about {
-  margin-bottom: 2.5rem;
+.about, .contact {
+  margin-bottom: 5rem;
 }
 
 @media (min-width: 750px) {
-  .intro, .contact, .about {
+  .intro, .about {
     margin-bottom: 5rem;
   }
 }
@@ -485,7 +485,7 @@ hr {
   width: 100%;
   height: 150px;
   margin-bottom: 2rem;
-  background-color: white;
+  background-color: black;
 
   .project__image {
     position: absolute;
@@ -506,7 +506,7 @@ hr {
 
     h3 {
       font-style: normal;
-      font-size: calc(var(--basicFontSize) - 0.2rem);
+      line-height: normal;
 
       span {
         padding: 0 .4rem;
@@ -528,7 +528,7 @@ hr {
 
       span {
         display: inline;
-        padding: .2rem .6rem;
+        padding: .2rem .4rem;
         font-style: normal;
         background-color: white;
         box-shadow: none;
