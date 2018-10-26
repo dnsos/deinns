@@ -30,7 +30,7 @@ Using the header it is possible to select different climate goals, the future in
 
 ![Climate Scenarios Viewer: Animation]({{site.baseurl}}/img/vks_animation.gif)
 
-The bars' width corresponds to a value to be achieved (the goal) and its height to the difference between this goals' value and the value of the selected scenario. If the bar matches the horizontal green line, the both values are equal. The bars are colour-encoded: grey colours indicate that a goal is missed, green colour indicates that a goal is not only reached, but exceeded.
+The bars' width corresponds to a value to be achieved (the goal) and its height to the difference between this goals' value and the value of the selected scenario. If the bar matches the horizontal green line both values are equal. The bars are colour-encoded: grey colours indicate that a goal is missed, green colour indicates that a goal is not only reached, but exceeded.
 
 Hovering a bar displays a tooltip with detailed information about the variable, the goal, the scenario and the deviation of the two values.
 
