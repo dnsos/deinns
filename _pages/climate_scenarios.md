@@ -17,7 +17,7 @@ With climate change progressing, the world that we live in will change. We can n
 ![Climate Scenarios Viewer: Interface]({{site.baseurl}}/img/vks_opener.png)
 
 ## CONTEXT
-As part of the [SENSES project](http://senses-project.org/) the _University of Applied Sciences Potsdam_ organised a course aiming to build tools to visualise climate scenarios. The data used stems from the _IIASA_ (International Institute for Applied Systems Analysis) and a comprehensible explanation of the characters of the different scenarios can be found in the [SENSES Primer](https://climatescenario.org/primer/).
+As part of the [SENSES project](http://senses-project.org/) the _University of Applied Sciences Potsdam_ organised a course aiming to build tools to visualise climate scenarios. The data used stems from the _IIASA_ (International Institute for Applied Systems Analysis) and a comprehensible explanation of the characteristics of the different scenarios can be found in the [SENSES Primer](https://climatescenario.org/primer/).
 
 This interactive scenario viewer is an approach to visualise the differences between computed climate scenarios and also to communicate them to a broader public. The variable group "Primary Energy" was exemplarily used for this prototype.
 
