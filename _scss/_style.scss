@@ -497,8 +497,9 @@ hr {
     height: 100%;
     background-size: cover;
     background-position: center;
+    filter: grayscale(100%);
     z-index: 2;
-    transition: opacity .2s;
+    transition: filter .2s;
   }
 
   .project__title {
@@ -565,7 +566,7 @@ hr {
   cursor: pointer;
 
   .project__image {
-    opacity: .5;
+    filter: none;
   }
 }
 
@@ -580,23 +581,23 @@ a.project__anchor {
 }
 
 #project__vks--preview {
-  background-image: url("/me/img/project_vks_preview_new.png");
+  background-image: url("/me/img/project_vks_preview_new.jpg");
 }
 
 #project__leuchttisch--preview {
-  background-image: url("/me/img/project_leuchttisch_preview_new.png");
+  background-image: url("/me/img/project_leuchttisch_preview_new.jpg");
 }
 
 #project__rita--preview {
-  background-image: url("/me/img/project_rita_preview_new.png");
+  background-image: url("/me/img/project_rita_preview_new.jpg");
 }
 
 #project__iub--preview {
-  background-image: url("/me/img/project_iub_preview_new.png");
+  background-image: url("/me/img/project_iub_preview_new.jpg");
 }
 
 #project__various--preview {
-  background-image: url("/me/img/project_various_preview_new.png");
+  background-image: url("/me/img/project_various_preview_new.jpg");
 }
 
 .vks {
