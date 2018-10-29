@@ -599,6 +599,51 @@ a.project__anchor {
   background-image: url("/me/img/project_various_preview_new.png");
 }
 
+.vks {
+  a {
+    box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 #f1f457;
+  }
+  a:hover {
+    box-shadow: inset 0 -0.8rem 0 #f1f457, 0 .2rem 0 #f1f457;
+  }
+}
+
+.leuchttisch {
+  a {
+    box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 #f7c29c;
+  }
+  a:hover {
+    box-shadow: inset 0 -0.8rem 0 #f7c29c, 0 .2rem 0 #f7c29c;
+  }
+}
+
+.iub {
+  a {
+    box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 #cac9d7;
+  }
+  a:hover {
+    box-shadow: inset 0 -0.8rem 0 #cac9d7, 0 .2rem 0 #cac9d7;
+  }
+}
+
+.rita {
+  a {
+    box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 #fccbc7;
+  }
+  a:hover {
+    box-shadow: inset 0 -0.8rem 0 #fccbc7, 0 .2rem 0 #fccbc7;
+  }
+}
+
+.various {
+  a {
+    box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 #fcc7d3;
+  }
+  a:hover {
+    box-shadow: inset 0 -0.8rem 0 #fcc7d3, 0 .2rem 0 #fcc7d3;
+  }
+}
+
 .project__detail--wrapper {
   background-color: white;
   animation: fadein 1.5s;
@@ -623,6 +668,13 @@ a.project__anchor {
 
     p.to-overview {
       text-align: center;
+
+      a {
+        box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 var(--primaryColor);
+      }
+      a:hover {
+        box-shadow: inset 0 -0.8rem 0 var(--primaryColor), 0 .2rem 0 var(--primaryColor);
+      }
     }
 
     img {

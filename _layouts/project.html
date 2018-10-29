@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<section class="project__detail--wrapper">
+<section class="project__detail--wrapper {{page.ref}}">
 
   <section class="project__detail--meta">
     <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
@@ -10,6 +10,7 @@ layout: default
       {% if page.external-link %}<li><span>Link: </span><a href="https://{{page.external-link}}">{{page.external-link}}</a></li>{% endif %}
       <li><span>Year: </span>{{page.year}}</li>
       <li><span>Role: </span>{{page.role}}</li>
+      {% if page.tools %}<li><span>Tools: </span>{{page.tools}}</li>{% endif %}
       {% if page.team %}<li><span>Team: </span>{{page.team}}</li>{% endif %}
     </ul>
   </section>
