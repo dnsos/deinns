@@ -19,14 +19,16 @@ With climate change progressing, the world that we live in will change. We can n
 ## CONTEXT
 As part of the [SENSES project](http://senses-project.org/) the _University of Applied Sciences Potsdam_ organised a course aiming to build tools to visualise climate scenarios. The data used stems from the _IIASA_ (International Institute for Applied Systems Analysis) and a comprehensible explanation of the characteristics of the different scenarios can be found in the [SENSES Primer](https://climatescenario.org/primer/).
 
-This interactive scenario viewer is an approach to visualise the differences between computed climate scenarios and also to communicate them to a broader public. The variable group "Primary Energy" was exemplarily used for this prototype.
+This interactive scenario viewer is an approach to visualise the differences between computed climate scenarios and also to communicate them to a broader public. The variable group _Primary Energy_ was exemplarily used for this prototype.
 
 ## PROJECT
 The result is a web-based interactive visualisation. It combines the common visualisation elements of a _bar chart_ and a _stacked bar chart_ and arranges them in a way that lets users explore differences between scenarios without climate policies and ones that incorporate measures for mitigation and adaptation.
 
+Using the header it is possible to select different climate goals, the future in which they are to be achieved and years from 2020 to 2100.
+
 ![Climate Scenarios Viewer: Navigation]({{site.baseurl}}/img/vks_nav.png)
 
-Using the header it is possible to select different climate goals, the future in which they are to be achieved and years from 2020 to 2100. The visualisation immediately changes according to the selections.
+The visualisation immediately changes according to the selections.
 
 ![Climate Scenarios Viewer: Animation]({{site.baseurl}}/img/vks_animation.gif)
 

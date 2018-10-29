@@ -2,7 +2,7 @@
 
 <section class="projects__grid">
 
-  {% assign pages = site.pages %}
+  {% assign pages = site.pages | sort:"order" | reverse %}
       {% for p in pages %}
 
         {% if p.tag == 'project' %}
