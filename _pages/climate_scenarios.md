@@ -15,12 +15,14 @@ order: 5
 
 With climate change progressing, the world that we live in will change. We can not predict its exact transformation, but we can create scenarios that describe a range of possible futures. This tool allows comparison between various computed scenarios and aims to communicate the challenges that climate change brings.
 
-![Climate Scenarios Viewer: Interface]({{site.baseurl}}/img/vks_opener.png)
+![Climate Scenarios Viewer: Closeup]({{site.baseurl}}/img/vks_opener.png)
 
 ## CONTEXT
 As part of the [SENSES project](http://senses-project.org/) the _University of Applied Sciences Potsdam_ organised a course aiming to build tools to visualise climate scenarios. The data used stems from the _IIASA_ (International Institute for Applied Systems Analysis) and a comprehensible explanation of the characteristics of the different scenarios can be found in the [SENSES Primer](https://climatescenario.org/primer/).
 
 This interactive scenario viewer is an approach to visualise the differences between computed climate scenarios and also to __communicate them to a broader public__. The variable group _Primary Energy_ was exemplarily used for this prototype.
+
+![Climate Scenarios Viewer: Interface]({{site.baseurl}}/img/vks_interface.png)
 
 ## PROJECT
 The result is a web-based interactive visualisation. It combines the common visualisation elements of a _bar chart_ and a _stacked bar chart_ and arranges them in a way that lets users explore __differences between scenarios without climate policies and ones that incorporate measures for mitigation and adaptation__.
