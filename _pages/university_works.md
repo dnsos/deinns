@@ -3,7 +3,7 @@ layout: project
 title: Various works
 subtitle:
 ref: various
-permalink: "/works/various-works/"
+permalink: "/various-works/"
 tag: project
 excerpt: University Projects
 external-link:

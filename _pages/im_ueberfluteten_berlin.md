@@ -3,7 +3,7 @@ layout: project
 title: Flooded Berlin
 subtitle: Im überfluteten Berlin
 ref: iub
-permalink: "/works/flooded-berlin/"
+permalink: "/flooded-berlin/"
 tag: project
 excerpt: Interactive Map
 external-link: imueberflutetenberlin.github.io

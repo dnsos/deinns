@@ -1,6 +1,6 @@
 <h2>Selected works</h2>
 
-<section class="projects__grid">
+<section class="projects__list">
 
   {% assign pages = site.pages | sort:"order" | reverse %}
       {% for p in pages %}
@@ -15,7 +15,7 @@
               <section class="project__excerpt">
                 <p><span>{{p.excerpt}}</span></p>
               </section>
-              <section class="project__image" id="project__{{p.ref}}--preview"></section>
+              <figure class="project__image" id="project__{{p.ref}}--preview"></figure>
             </a>
           </section>
 

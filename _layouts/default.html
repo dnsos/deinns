@@ -9,42 +9,14 @@
     <meta name="author" content="{{page.author}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
 
-    <link rel="stylesheet" href="{{site.baseurl}}/css/normalize.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/minireset.min.css">
     <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
 
   </head>
   <body>
-
-    <main class="container">
-
-      <section class="row">
-
-        <section class="three columns intro--sticky">
-
-          <section class="intro">
-            <a href="{{site.baseurl}}"><h1 class="headline--highlighted"><span>Hi, I am Dennis Ostendorf,</span></h1></a>
-            <p><span>Interface Designer and Developer from Berlin.</span></p>
-          </section>
-
-          <section class="contact">
-            <ul>
-              <li class="contact--mail"><a href="mailto:d.ennis.o@web.de">d.ennis.o@web.de</a></li>
-              <li class="contact--github"><a href="https://github.com/dnsos" target="_blank">dnsos</a></li>
-            </ul>
-          </section>
-
-        </section>
-
-        <section class="nine columns">
-
-          {{content}}
-
-        </section>
-
-      </section>
-
-    </main>
-
+    <div class="container">
+      {{content}}
+    </div>
   </body>
 </html>

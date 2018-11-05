@@ -3,7 +3,7 @@ layout: project
 title: RITA
 subtitle: the story of an egg-worker
 ref: rita
-permalink: "/works/rita/"
+permalink: "/rita/"
 tag: project
 excerpt: Illustrated Short Story
 external-link: dnsos.github.io/ritasgeschichte/en

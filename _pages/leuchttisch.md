@@ -3,7 +3,7 @@ layout: project
 title: Leuchttisch
 subtitle: A Collection Exploration Concept
 ref: leuchttisch
-permalink: "/works/leuchttisch/"
+permalink: "/leuchttisch/"
 tag: project
 excerpt: Collection Exploration Concept
 external-link: 

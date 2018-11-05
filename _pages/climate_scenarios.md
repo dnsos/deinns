@@ -2,7 +2,7 @@
 layout: project
 title: Climate Scenarios Viewer
 ref: vks
-permalink: "/works/climate-scenarios-viewer/"
+permalink: "/climate-scenarios-viewer/"
 tag: project
 excerpt: Interactive Data Visualisation
 external-link:
