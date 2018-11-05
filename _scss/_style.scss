@@ -389,12 +389,17 @@ a.project__anchor {
         grid-template-columns: minmax(6rem, 1fr) 11fr;
         grid-template-areas: 
           "type content";
+        line-height: 1.85;
         dt {
           grid-area: type;
           font-weight: 700;
         }
         dd {
           grid-area: content;
+            span {
+              padding: .2rem .5rem;
+              background-color: var(--baseColor);
+            }
         }
       }
   }
