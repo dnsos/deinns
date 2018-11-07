@@ -14,9 +14,9 @@ team: Marlo Tristan Probst (Research)
 order: 2
 ---
 
-Told in this project is the story of Rita, a laying hen who experiences the different forms of the egg industry. But Rita is no regular „egg-worker“. Little by little, she discovers her own basic instincts and does not hesitate to fight for them.
-
 ![RITA: Illustration]({{site.baseurl}}/img/rita_opener.jpg)
+
+Told in this project is the story of Rita, a laying hen who experiences the different forms of the egg industry. But Rita is no regular „egg-worker“. Little by little, she discovers her own basic instincts and does not hesitate to fight for them.
 
 ## CONTEXT
 In late 2016 three institutions collaborated for an interdisciplinary experiment: the [University of Applied Sciences Potsdam](https://www.en.fh-potsdam.de/), [Humboldt-Universität zu Berlin](https://www.hu-berlin.de/en?set_language=en) and [IRI THESys](https://www.iri-thesys.org/), a research institute focussing on the transformation of human-environment systems. Approached was the relationship of humankind and the chicken, an animal omnipresent in our societies' mass consumption. Over a course of several months different perspectives were explored, discussed and classified. Recurrent was the consultation of ethical evaluations related to the use of chickens in our food industries.

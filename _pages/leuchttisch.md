@@ -14,9 +14,9 @@ team: Pauline Junginger (Research, Concept), Barbara Avila Vissirini (Concept, D
 order: 4
 ---
 
-When visualising high-resolution image collections, rich with metadata and descriptive tags, there is an opportunity to reveal both the visual details of individual images and the iconographic patterns prevalent within the collection. Presented here is an approach of bringing together both aspects and thereby contributing a different perspective to the domain of cultural collection visualisation.
-
 ![Leuchttisch: Collection]({{site.baseurl}}/img/leuchttisch_collection.jpg)
+
+When visualising high-resolution image collections, rich with metadata and descriptive tags, there is an opportunity to reveal both the visual details of individual images and the iconographic patterns prevalent within the collection. Presented here is an approach of bringing together both aspects and thereby contributing a different perspective to the domain of cultural collection visualisation.
 
 ## CONTEXT
 For years the _University of Applied Sciences Potsdam_ has been focussing on the visualisation of cultural collections in the [VIKUS](https://uclab.fh-potsdam.de/projects/vikus/) research project. As part of a course on exploring new ways of approaching and interacting with collections this exploration concept was developed and later implemented as a web-based prototype. 

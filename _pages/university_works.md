@@ -14,6 +14,8 @@ team:
 order: 1
 ---
 
+.
+
 Collected here are works that I developed as part of university courses in 2015 and 2016.
 
 ## NON VERBAL EXPLANATION OF A PROCESS

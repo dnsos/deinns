@@ -13,9 +13,9 @@ team: Hannah Schwan (Concept, Design)
 order: 5
 ---
 
-With climate change progressing, the world that we live in will change. We can not predict its exact transformation, but we can create scenarios that describe a range of possible futures. This tool allows comparison between various computed scenarios and aims to communicate the challenges that climate change brings.
-
 ![Climate Scenarios Viewer: Closeup]({{site.baseurl}}/img/vks_opener.png)
+
+With climate change progressing, the world that we live in will change. We can not predict its exact transformation, but we can create scenarios that describe a range of possible futures. This tool allows comparison between various computed scenarios and aims to communicate the challenges that climate change brings.
 
 ## CONTEXT
 As part of the [SENSES project](http://senses-project.org/) the _University of Applied Sciences Potsdam_ organised a course aiming to build tools to visualise climate scenarios. The data used stems from the _IIASA_ (International Institute for Applied Systems Analysis) and a comprehensible explanation of the characteristics of the different scenarios can be found in the [SENSES Primer](https://climatescenario.org/primer/).
