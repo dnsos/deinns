@@ -30,8 +30,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 2rem 2rem 0;
-  animation: fadein 1s;
-  box-sizing: border-box; }
+  animation: fadein 1s; }
 
 @media (min-width: 400px) {
   .container {
@@ -56,6 +55,10 @@
 
 /* BASE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%; }
 body {
@@ -72,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: calc(var(--grid-spacing) / 2);
   font-weight: 700;
-  letter-grid-spacing: 0;
+  letter-spacing: 0;
   color: var(--color-grey-61);
 
   span {
@@ -102,11 +105,31 @@ a {
 a:hover {
   box-shadow: inset 0 -0.8rem 0 var(--color-primary), 0 .2rem 0 var(--color-primary); }
 
+button {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: italic;
+  white-space: nowrap;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  box-shadow: inset 0 -0.8rem 0 white, 0 .2rem 0 var(--color-primary);
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: inset 0 -0.8rem 0 var(--color-primary), 0 .2rem 0 var(--color-primary);
+}
+
+button:hover, button:focus {
+  outline: none;
+}
+
 /* grid-spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-button,
-.button {
-  margin-bottom: calc(var(--grid-spacing) / 2); }
 input,
 textarea,
 select,
@@ -191,24 +214,6 @@ form {
 
 main {
   grid-area: content;
-}
-
-.about {
-  padding: calc(var(--grid-spacing) / 2);
-  margin-bottom: var(--grid-spacing);
-  border: .1rem solid var(--color-primary);
-
-  p:first-of-type {
-    margin-bottom: 0;
-  }
-
-  noscript p {
-    padding: calc(var(--grid-spacing) / 4);
-    margin-bottom: 0;
-    font-size: calc(var(--font-size-base) - 0.2rem);
-    font-style: italic;
-    background-color: var(--color-grey-07);
-  }
 }
 
 .projects__list {
