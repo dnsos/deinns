@@ -1,21 +1,21 @@
 <h2>Selected Works</h2>
 
-<section class="projects__list">
+<section class="c-projects-overview">
 
   {% assign pages = site.pages | sort:"order" | reverse %}
       {% for p in pages %}
 
         {% if p.tag == 'project' %}
 
-          <section class="project__wrapper">
-            <a href="{{site.baseurl}}{{p.permalink}}" class="project__anchor">
-              <section class="project__title">
+          <section class="c-projects-overview__wrapper">
+            <a href="{{site.baseurl}}{{p.permalink}}" class="c-projects-overview__anchor">
+              <section class="c-projects-overview__title">
                 <h3><span>{{p.title}}</span></h3>
               </section>
-              <section class="project__excerpt">
+              <section class="c-projects-overview__excerpt">
                 <p><span>{{p.excerpt}}</span></p>
               </section>
-              <figure class="project__image" id="project__{{p.ref}}--preview"></figure>
+              <figure class="c-projects-overview__image" id="project__{{p.ref}}--preview"></figure>
             </a>
           </section>
 

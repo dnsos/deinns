@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<section class="project__back--button"><a href="{{site.baseurl}}">Back to overview</a></section>
+<a href="{{site.baseurl}}" class="m-btn__back">Back to overview</a>
 
-<article class="project__detail--wrapper {{page.ref}}">
+<article class="c-project c-project__{{page.ref}}">
 
-  <section class="project__detail--meta">
+  <header class="c-project__header">
     <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
     <dl>
       <div>
@@ -41,11 +41,10 @@ layout: default
       </div>
       {% endif %}
     </dl>
-  </section>
+  </header>
 
-  <section class="project__detail--content">
+  <main class="c-project__content">
     {{content}}
-    <!--<p class="to-overview"><a href="{{site.baseurl}}">Back to overview</a></p>-->
-  </section>
+  </main>
 
 </article>

@@ -1,0 +1,17 @@
+:root {
+    --color-primary: rgb(225, 225, 225);
+    --color-grey-07: rgb(238, 238, 238);
+    --color-grey-61: rgb(100, 100, 100);
+  
+    --font-primary: 'Open Sans', Arial, sans-serif;
+    --font-size-base: 1.5rem;
+    --font-size-heading: 1.8rem;
+    --font-underlined: inset 0 -2rem 0 white, 0 .2rem 0 white;
+  
+    --grid-spacing: 4rem;
+  }
+  
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
