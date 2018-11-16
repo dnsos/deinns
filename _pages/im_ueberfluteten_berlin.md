@@ -13,6 +13,7 @@ tools: QGIS, Carto, Leaflet.js
 order: 3
 ---
 
+{:.m-image__fullwidth}
 ![Flooded Berlin: Map]({{site.baseurl}}/img/iub_map_01.jpg)
 
 The sea level rise caused by climate change endangers cities, regions and whole countries everywhere in the world. Germany is barely, its capital Berlin not at all, affected. But what if Berlin was fictionally transferred to a coastal area, affected by sea level rise?
@@ -23,14 +24,18 @@ In summer 2017 the _University of Applied Sciences Potsdam_ organised a semester
 ## PROJECT
 The idea behind the project combines two common tools of communicating climate change: __map-based visualisations and narration__.
 
+{:.m-image__fullwidth}
 ![Flooded Berlin: Concept]({{site.baseurl}}/img/iub_flood.png)
 
 Berlin is on average 34 meters above sea level. For the project, the official altitude data of the city of Berlin were used – 34 meters were subtracted from each measuring point. This creates a relative image of a Berlin at sea level. The areas below sea level are blue – the darker the blue, the deeper the area.
 
+{:.m-image__fullwidth}
 ![Flooded Berlin: Map Overview]({{site.baseurl}}/img/iub_map_03.jpg)
 
 In several scenarios, critical points are shown that are imperative for the functioning of the social structure. For each scenario, a real event from the past is referenced to clarify the relevance of the threat. __By fictionally bringing the sea level rise to Berlin, recipients are invited to reflect about the consequences of climate change happening already now in other parts of the world__.
 
+{:.m-image__fullwidth}
 ![Flooded Berlin: Map Detail]({{site.baseurl}}/img/iub_map_02.jpg)
 
+{:.m-image__fullwidth}
 ![Flooded Berlin: Home]({{site.baseurl}}/img/iub_home.jpg)

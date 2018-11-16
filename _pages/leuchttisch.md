@@ -14,6 +14,7 @@ team: Pauline Junginger (Research, Concept), Barbara Avila Vissirini (Concept, D
 order: 4
 ---
 
+{:.m-image__fullwidth}
 ![Leuchttisch: Collection]({{site.baseurl}}/img/leuchttisch_collection.jpg)
 
 When visualising high-resolution image collections, rich with metadata and descriptive tags, there is an opportunity to reveal both the visual details of individual images and the iconographic patterns prevalent within the collection. Presented here is an approach of bringing together both aspects and thereby contributing a different perspective to the domain of cultural collection visualisation.
@@ -30,22 +31,27 @@ The user is offered an interface of three stages, the _Collection_ view, the _Ca
 
 The _Collection_ view presents a cloud-like collage of closeups. Each closeup represents one occuring tag. Their spatial arrangement is based on topic, their size on the frequency of the depicted tag within the collection. Over time the depictions change, always creating a different random collage.
 
+{:.m-image__fullwidth}
 ![Leuchttisch: Collection Collages]({{site.baseurl}}/img/leuchttisch_collection_collage.jpg)
 
 Selecting a closeup, and therefore a tag, opens the _Category_ view that appears as a traditional image grid, displaying all closeups referring to the selected tag.
 
+{:.m-image__fullwidth}
 ![Leuchttisch: Hover Interaction]({{site.baseurl}}/img/leuchttisch_tag-hover.jpg)
 
 Selecting a closeup in the _Category_ view leads to the _Detail_ view that allows interactive examination of a specific image by highlighting areas of interest.
 
+{:.m-image__fullwidth}
 ![Leuchttisch: Object Hover]({{site.baseurl}}/img/leuchttisch_object_animation.gif)
 
 This view is gradually zoomable, with the full-resolution image and all its visual details being displayed.
 
+{:.m-image__fullwidth}
 ![Leuchttisch: Object Zoom]({{site.baseurl}}/img/leuchttisch_object-zoom.jpg)
 
 Selected areas of interest remain highlighted when zooming in.
 
+{:.m-image__fullwidth}
 ![Leuchttisch: Object Zoom]({{site.baseurl}}/img/leuchttisch_object-zoom-2.jpg)
 
 All views are interconnected and invite for __serendipitous paths__ through the collection, this way aiming for __unconventional exploration and sense-making__.
