@@ -19,11 +19,12 @@ color: var(--color-grey-61); }
 .root {
     position: relative;
     display: grid;
-    grid-gap: var(--grid-spacing);
+    grid-gap: calc(var(--grid-spacing) / 2);
     grid-template-areas: 
       "sidebar"
       "content";
     width: 100%;
+    max-width: 100rem;
     margin: 0 auto;
     padding: 2rem 2rem 0;
     animation: fadein 1s; }
@@ -42,11 +43,6 @@ color: var(--color-grey-61); }
       width: 70%;
       padding: 8rem 0 0; }
   
-  }
-  
-  @media (min-width: 1250px) {
-    .root {
-      width: 60%; }
   }
 
   .c-main {

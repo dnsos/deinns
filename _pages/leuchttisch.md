@@ -36,22 +36,22 @@ The _Collection_ view presents a cloud-like collage of closeups. Each closeup re
 
 Selecting a closeup, and therefore a tag, opens the _Category_ view that appears as a traditional image grid, displaying all closeups referring to the selected tag.
 
-{:.m-image__fullwidth}
+{:.m-image__fullwidth .m-image__border}
 ![Leuchttisch: Hover Interaction]({{site.baseurl}}/img/leuchttisch_tag-hover.jpg)
 
 Selecting a closeup in the _Category_ view leads to the _Detail_ view that allows interactive examination of a specific image by highlighting areas of interest.
 
-{:.m-image__fullwidth}
+{:.m-image__fullwidth .m-image__border}
 ![Leuchttisch: Object Hover]({{site.baseurl}}/img/leuchttisch_object_animation.gif)
 
 This view is gradually zoomable, with the full-resolution image and all its visual details being displayed.
 
-{:.m-image__fullwidth}
+{:.m-image__fullwidth .m-image__border}
 ![Leuchttisch: Object Zoom]({{site.baseurl}}/img/leuchttisch_object-zoom.jpg)
 
 Selected areas of interest remain highlighted when zooming in.
 
-{:.m-image__fullwidth}
+{:.m-image__fullwidth .m-image__border}
 ![Leuchttisch: Object Zoom]({{site.baseurl}}/img/leuchttisch_object-zoom-2.jpg)
 
 All views are interconnected and invite for __serendipitous paths__ through the collection, this way aiming for __unconventional exploration and sense-making__.
