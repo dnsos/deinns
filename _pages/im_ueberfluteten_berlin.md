@@ -16,6 +16,7 @@ order: 3
 {:.m-image__fullwidth}
 ![Flooded Berlin: Map]({{site.baseurl}}/img/iub_map_01.jpg)
 
+{:.m-text__highlighted}
 The sea level rise caused by climate change endangers cities, regions and whole countries everywhere in the world. Germany is barely, its capital Berlin not at all, affected. But what if Berlin was fictionally transferred to a coastal area, affected by sea level rise?
 
 ## CONTEXT

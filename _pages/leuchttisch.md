@@ -17,6 +17,7 @@ order: 4
 {:.m-image__fullwidth}
 ![Leuchttisch: Collection]({{site.baseurl}}/img/leuchttisch_collection.jpg)
 
+{:.m-text__highlighted}
 When visualising high-resolution image collections, rich with metadata and descriptive tags, there is an opportunity to reveal both the visual details of individual images and the iconographic patterns prevalent within the collection. Presented here is an approach of bringing together both aspects and thereby contributing a different perspective to the domain of cultural collection visualisation.
 
 ## CONTEXT

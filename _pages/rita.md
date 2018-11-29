@@ -17,6 +17,7 @@ order: 2
 {:.m-image__fullwidth}
 ![RITA: Illustration]({{site.baseurl}}/img/rita_opener.jpg)
 
+{:.m-text__highlighted}
 Told in this project is the story of Rita, a laying hen who experiences the different forms of the egg industry. But Rita is no regular „egg-worker“. Little by little, she discovers her own basic instincts and does not hesitate to fight for them.
 
 ## CONTEXT

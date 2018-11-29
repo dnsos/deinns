@@ -63,6 +63,12 @@
     overflow-x: hidden;
 
     .c-project__header {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+
+        .c-project__meta {
+          grid-column: 2 / 12;
+        }
         dl {
             margin-bottom: var(--grid-spacing);
             div {
@@ -101,10 +107,10 @@
         }
       }
       
-        p:nth-of-type(2) {
+        .m-text__highlighted {
             grid-column: 1 / 13;
             padding: calc(var(--grid-spacing) / 2);
-            margin: 0 auto var(--grid-spacing);
+            margin: 0 0 var(--grid-spacing);
             font-style: italic;
             border: .2rem solid var(--color-primary);
         }       

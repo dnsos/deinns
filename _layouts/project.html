@@ -7,40 +7,42 @@ layout: default
 <article class="c-project c-project__{{page.ref}}">
 
   <header class="c-project__header">
-    <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
-    <dl>
-      <div>
-        <dt>Year:</dt>
-        <dd>{{page.year}}</dd>
-      </div>
-      <div>
-        <dt>Role:</dt>
-        <dd>{{page.role}}</dd>
-      </div>
-      {% if page.team %}
-      <div>
-        <dt>Team:</dt>
-        <dd>{{page.team}}</dd>
-      </div>
-      {% endif %}
-      {% if page.tools %}
-      <div>
-        <dt>Tools:</dt>
-        <dd>
-          {% assign tools = page.tools | split: "," %}
-            {% for tool in tools %}
-              <span>{{tool}}</span>
-            {% endfor %}
-        </dd>
-      </div>
-      {% endif %}
-      {% if page.external-link %}
-      <div>
-        <dt>Link:</dt>
-        <dd><a href="https://{{page.external-link}}">{{page.external-link}}</a></dd>
-      </div>
-      {% endif %}
-    </dl>
+    <section class="c-project__meta">
+        <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
+        <dl>
+          <div>
+            <dt>Year:</dt>
+            <dd>{{page.year}}</dd>
+          </div>
+          <div>
+            <dt>Role:</dt>
+            <dd>{{page.role}}</dd>
+          </div>
+          {% if page.team %}
+          <div>
+            <dt>Team:</dt>
+            <dd>{{page.team}}</dd>
+          </div>
+          {% endif %}
+          {% if page.tools %}
+          <div>
+            <dt>Tools:</dt>
+            <dd>
+              {% assign tools = page.tools | split: "," %}
+                {% for tool in tools %}
+                  <span>{{tool}}</span>
+                {% endfor %}
+            </dd>
+          </div>
+          {% endif %}
+          {% if page.external-link %}
+          <div>
+            <dt>Link:</dt>
+            <dd><a href="https://{{page.external-link}}">{{page.external-link}}</a></dd>
+          </div>
+          {% endif %}
+        </dl>
+    </section>
   </header>
 
   <main class="c-project__content">

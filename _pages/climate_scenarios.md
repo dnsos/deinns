@@ -16,6 +16,7 @@ order: 5
 {:.m-image__fullwidth}
 ![Climate Scenarios Viewer: Closeup]({{site.baseurl}}/img/vks_opener.png)
 
+{:.m-text__highlighted}
 With climate change progressing, the world that we live in will change. We can not predict its exact transformation, but we can create scenarios that describe a range of possible futures. This tool allows comparison between various computed scenarios and aims to communicate the challenges that climate change brings.
 
 ## CONTEXT
