@@ -11,13 +11,14 @@ year: 2018
 role: Concept, Design, Web Development
 tools: Adobe XD, Pixi.js, D3.js
 team: Pauline Junginger (Research, Concept), Barbara Avila Vissirini (Concept, Design), Anastasia Voloshina (Concept, Design)
+color-primary: '#f7c29c'
 order: 4
 ---
 
 {:.m-image__fullwidth}
 ![Leuchttisch: Collection]({{site.baseurl}}/img/leuchttisch_collection.jpg)
 
-{:.m-text__highlighted}
+{:.m-text__highlighted style="border-color: {{ page.color-primary }};"}
 When visualising high-resolution image collections, rich with metadata and descriptive tags, there is an opportunity to reveal both the visual details of individual images and the iconographic patterns prevalent within the collection. Presented here is an approach of bringing together both aspects and thereby contributing a different perspective to the domain of cultural collection visualisation.
 
 ## CONTEXT

@@ -11,10 +11,11 @@ year: 2015/2016
 role: Concept, Design
 tools: Adobe Illustrator, Adobe InDesign, P5.js
 team:
+color-primary: '#fcc7d3'
 order: 1
 ---
 
-{:.m-text__highlighted}
+{:.m-text__highlighted style="border-color: {{ page.color-primary }};"}
 Collected here are works that I developed as part of university courses in 2015 and 2016.
 
 ## NON VERBAL EXPLANATION OF A PROCESS
