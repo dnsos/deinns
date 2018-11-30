@@ -44,7 +44,6 @@
   }
   
   .m-btn__back {
-    position: relative;
     grid-area: sidebar;
   }
   
@@ -112,7 +111,7 @@
             padding: calc(var(--grid-spacing) / 2);
             margin: 0 0 var(--grid-spacing);
             font-style: italic;
-            border: .2rem solid var(--color-primary);
+            border: .2rem solid var(--color-grey-04);
         }       
 
         img {
