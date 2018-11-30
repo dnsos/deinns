@@ -66,8 +66,14 @@
       grid-template-columns: repeat(12, 1fr);
 
         .c-project__meta {
-          grid-column: 2 / 12;
+          grid-column: 1 / 13;
         }
+        @media (min-width: 850px) {
+          .c-project__meta {
+            grid-column: 2 / 12;
+          }
+        }
+
         dl {
             margin-bottom: var(--grid-spacing);
             div {
@@ -111,7 +117,7 @@
             padding: calc(var(--grid-spacing) / 2);
             margin: 0 0 var(--grid-spacing);
             font-style: italic;
-            border: .2rem solid var(--color-grey-04);
+            border: .2rem solid var(--color-grey-07);
         }       
 
         img {
@@ -122,7 +128,7 @@
 
         .m-image__border {
           img {
-            border: .2rem solid var(--color-grey-04);
+            border: .1rem solid var(--color-grey-34);
           }
         }
 
