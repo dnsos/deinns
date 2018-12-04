@@ -118,7 +118,12 @@
             margin: 0 0 var(--grid-spacing);
             font-style: italic;
             border: .2rem solid var(--color-grey-07);
-        }       
+        }
+        @media (min-width: 850px) {
+          .m-text__highlighted {
+            grid-column: 2 / 12;
+          }
+        }    
 
         img {
             width: 100%;
