@@ -9,7 +9,7 @@ excerpt: University Projects
 external-link:
 year: 2015/2016
 role: Concept, Design
-tools: Adobe Illustrator, Adobe InDesign, P5.js
+tools: P5.js
 team:
 color-primary: '#fcc7d3'
 order: 1

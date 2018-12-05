@@ -9,7 +9,7 @@ excerpt: Illustrated Short Story
 external-link: dnsos.github.io/ritasgeschichte/en
 year: 2016/2017
 role: Research, Concept, Illustration, Web Development
-tools: Adobe Photoshop, Adobe Illustrator, Jekyll
+tools: Jekyll
 team: Marlo Tristan Probst (Research)
 color-primary: '#fccbc7'
 order: 2

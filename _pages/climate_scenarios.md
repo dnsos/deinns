@@ -8,7 +8,7 @@ excerpt: Interactive Data Visualisation
 external-link:
 year: 2018
 role: Concept, Design, Web Development
-tools: Adobe Illustrator, D3.js
+tools: D3.js
 team: Hannah Schwan (Concept, Design)
 color-primary: '#f1f457'
 order: 5
