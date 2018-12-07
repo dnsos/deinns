@@ -1,0 +1,55 @@
+.c-intro {
+    position: relative;
+    grid-area: sidebar;
+  }
+  
+  @media (min-width: 850px) {
+    .c-intro {
+      position: fixed;
+      top: 8rem;
+      max-width: 20rem;
+    }
+  }
+  
+  .c-intro__text {
+    h1 {
+      font-style: normal;
+      margin-bottom: 1rem;
+    }
+    p {
+     font-family: var(--font-primary);
+     font-size: var(--font-size-base);
+  
+     span {
+       box-shadow: var(--font-underlined);
+     }
+     a {
+       font-style: normal;
+     }
+   }
+  
+  }
+  
+  .c-contact {
+    margin-bottom: calc(var(--grid-spacing) / 2);
+
+    ul, li {
+      margin-bottom: 0;
+    }
+  
+    .c-contact__mail:before,
+    .c-contact__github:before {
+      display: inline-block;
+      width: 1.5rem;
+      margin-right: .5rem;
+      transform: translateY(.4rem);
+    }
+  
+    .c-contact__mail:before {
+      content: url(/me/img/ic_mail.svg);
+    }
+  
+    .c-contact__github:before {
+      content: url(/me/img/ic_github.svg);
+    }
+  }

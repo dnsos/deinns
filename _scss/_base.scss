@@ -1,0 +1,77 @@
+  /* BASE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+*, ::after, ::before {
+box-sizing: border-box;
+}
+
+html {
+font-size: 62.5%; }
+body {
+font-size: var(--font-size-base);
+line-height: 1.6;
+font-weight: 400;
+font-family: var(--font-primary);
+background-color: white;
+color: var(--color-grey-61); }
+
+/* GRID
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.root {
+    position: relative;
+    display: grid;
+    grid-gap: calc(var(--grid-spacing) / 2);
+    grid-template-areas: 
+      "sidebar"
+      "content";
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+    animation: fadein 1s; }
+  
+  @media (min-width: 400px) {
+    .root {
+      width: 80%;
+      padding: 4rem 0 0; }
+  }
+  
+  @media (min-width: 850px) {
+    .root {
+      grid-template-columns: 3fr 9fr;
+      grid-template-areas: 
+        "sidebar content";
+      width: 70%;
+      padding: 8rem 0 0; }
+  
+  }
+
+  .c-main {
+    grid-area: content;
+  }
+
+/* SPACING
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: calc(var(--grid-spacing) / 2); }
+pre,
+blockquote,
+dl,
+figure,
+table,
+ul,
+ol,
+form {
+  margin-bottom: calc(var(--grid-spacing) / 2); }
+
+/* MISC
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+::selection {
+  color: rgb(255, 255, 255);
+  background-color: var(--color-primary); }
+
+::-moz-selection {
+  color: rgb(255, 255, 255);
+  background-color: var(--color-primary); }

@@ -5,4 +5,17 @@ excerpt: I am Dennis Ostendorf, Interface Designer and Developer from Berlin
 author: Dennis
 ---
 
-{% include about.html %}
+<header class="c-intro">
+    <section class="c-intro__text">
+        <a href="{{site.baseurl}}">
+            <h1>Hi, I am Dennis Ostendorf,</h1>
+        </a>
+        <p>Interface Designer and Developer from Berlin.</p>
+    </section>
+    {% include contact.html %}
+</header>
+
+<main class="c-main">
+    {% include about.html %}
+    {% include projects.html %}
+</main>

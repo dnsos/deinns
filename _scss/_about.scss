@@ -1,0 +1,28 @@
+.c-about {
+    padding: calc(var(--grid-spacing) / 2);
+    margin-bottom: var(--grid-spacing);
+    border: .2rem solid var(--color-grey-07);
+
+    p:first-of-type {
+      margin-bottom: 0;
+    }
+  
+    noscript p {
+      padding: calc(var(--grid-spacing) / 4);
+      margin-bottom: 0;
+      font-size: calc(var(--font-size-base) - 0.2rem);
+      font-style: italic;
+      background-color: var(--color-grey-07);
+    }
+
+    .c-about-extended {
+        max-height: 0rem;
+        overflow: hidden;
+        transition: max-height .3s ease-out;
+
+      &.visible {
+          max-height: 50rem;
+          transition: max-height .3s ease-in-out;
+        }
+      }
+  }

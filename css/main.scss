@@ -3,4 +3,10 @@
 ---
 $baseurl: "{{ site.baseurl }}";
 
-@import "style";
+@import "variables";
+@import "base";
+@import "typography";
+@import "intro";
+@import "about";
+@import "projects-overview";
+@import "projects";

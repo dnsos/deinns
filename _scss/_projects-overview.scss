@@ -1,0 +1,110 @@
+.c-projects-overview {
+    width: 100%;
+    padding-bottom: var(--grid-spacing);
+    overflow: hidden;
+  }
+  
+  .c-projects-overview__wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 15rem;
+    margin-bottom: calc(var(--grid-spacing) / 2);
+    background-color: black;
+  
+    .c-projects-overview__image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center;
+      opacity: 1;
+      z-index: 2;
+      transition: opacity .2s;
+    }
+  
+    .c-projects-overview__title {
+      position: absolute;
+      width: 100%;
+      padding-top: .8rem;
+      text-align: center;
+      z-index: 3;
+  
+      h3 {
+        font-style: normal;
+        line-height: normal;
+  
+        span {
+          padding: 0 .4rem;
+        }
+      }
+    }
+  
+    .c-projects-overview__excerpt {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      z-index: 3;
+  
+      p {
+        display: block;
+        margin: 0 auto;
+        font-size: calc(var(--font-size-base) - 0.2rem);
+        text-align: center;
+  
+        span {
+          display: inline;
+          padding: .2rem .4rem;
+          font-style: normal;
+          background-color: white;
+          box-shadow: none;
+          vertical-align: baseline;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 400px) {
+    .c-projects-overview__wrapper {
+      width: 100%;
+      height: 15rem;
+    }
+  }
+  
+  .c-projects-overview__wrapper:hover {
+    cursor: pointer;
+  
+    .c-projects-overview__image {
+      opacity: .8;
+    }
+  }
+  
+  .c-projects-overview__anchor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  a.c-projects-overview__anchor {
+    box-shadow: none;
+  }
+  
+  #project__vks--preview {
+    background-image: url("/me/img/project_vks_preview_new.jpg");
+  }
+  
+  #project__leuchttisch--preview {
+    background-image: url("/me/img/project_leuchttisch_preview_new.jpg");
+  }
+  
+  #project__rita--preview {
+    background-image: url("/me/img/project_rita_preview_new.jpg");
+  }
+  
+  #project__iub--preview {
+    background-image: url("/me/img/project_iub_preview_new.jpg");
+  }
+  
+  #project__various--preview {
+    background-image: url("/me/img/project_various_preview_new.jpg");
+  }

@@ -2,22 +2,52 @@
 layout: default
 ---
 
-<section class="project__detail--wrapper {{page.ref}}">
+<a href="{{site.baseurl}}" class="m-btn__back"><span>Back to overview</span></a>
 
-  <section class="project__detail--meta">
-    <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
-    <ul>
-      {% if page.external-link %}<li><span>Link: </span><a href="https://{{page.external-link}}">{{page.external-link}}</a></li>{% endif %}
-      <li><span>Year: </span>{{page.year}}</li>
-      <li><span>Role: </span>{{page.role}}</li>
-      {% if page.tools %}<li><span>Tools: </span>{{page.tools}}</li>{% endif %}
-      {% if page.team %}<li><span>Team: </span>{{page.team}}</li>{% endif %}
-    </ul>
-  </section>
+<article class="c-project c-project__{{page.ref}}">
 
-  <section class="project__detail--content">
+  <header class="c-project__header">
+    <section class="c-project__meta">
+        <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
+        <p>{{page.excerpt}}</p>
+        <dl>
+          <div>
+            <dt>Year:</dt>
+            <dd>{{page.year}}</dd>
+          </div>
+          <div>
+            <dt>Role:</dt>
+            <dd>{{page.role}}</dd>
+          </div>
+          {% if page.team %}
+          <div>
+            <dt>Team:</dt>
+            <dd>{{page.team}}</dd>
+          </div>
+          {% endif %}
+          {% if page.tools %}
+          <div>
+            <dt>Tools:</dt>
+            <dd>
+              {% assign tools = page.tools | split: "," %}
+                {% for tool in tools %}
+                  <span>{{tool}}</span>
+                {% endfor %}
+            </dd>
+          </div>
+          {% endif %}
+          {% if page.external-link %}
+          <div>
+            <dt>Link:</dt>
+            <dd><a href="https://{{page.external-link}}">{{page.external-link}}</a></dd>
+          </div>
+          {% endif %}
+        </dl>
+    </section>
+  </header>
+
+  <main class="c-project__content">
     {{content}}
-    <p class="to-overview"><a href="{{site.baseurl}}">Back to overview</a></p>
-  </section>
+  </main>
 
-</section>
+</article>
