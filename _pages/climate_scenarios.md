@@ -26,7 +26,7 @@ As part of the [SENSES project](http://senses-project.org/) the _University of A
 This interactive scenario viewer is an approach to visualise the differences between computed climate scenarios and also to __communicate them to a broader public__. The variable group _Primary Energy_ was exemplarily used for this prototype.
 
 {:.m-image__fullwidth}
-![Climate Scenarios Viewer: Interface]({{site.baseurl}}/img/vks_general-interface.png)
+![Climate Scenarios Viewer: Interface]({{site.baseurl}}/img/vks_general-interface.jpg)
 
 ## PROJECT
 The result is a web-based interactive visualisation. It combines the common visualisation elements of a _bar chart_ and a _stacked bar chart_ and arranges them in a way that lets users explore __differences between scenarios without climate policies and ones that incorporate measures for mitigation and adaptation__.

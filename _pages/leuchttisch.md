@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Leuchttisch
-subtitle: A Collection Exploration Concept
+subtitle: 
 ref: leuchttisch
 permalink: "/leuchttisch/"
 tag: project
@@ -16,7 +16,7 @@ order: 4
 ---
 
 {:.m-image__fullwidth}
-![Leuchttisch: Collection]({{site.baseurl}}/img/leuchttisch_collection.jpg)
+![Leuchttisch: Collection]({{site.baseurl}}/img/leuchttisch_intro-cloud.jpg)
 
 {:.m-text__highlighted style="border-color: {{ page.color-primary }};"}
 When visualising high-resolution image collections, rich with metadata and descriptive tags, there is an opportunity to reveal both the visual details of individual images and the iconographic patterns prevalent within the collection. Presented here is an approach of bringing together both aspects and thereby contributing a different perspective to the domain of cultural collection visualisation.
@@ -34,7 +34,7 @@ The user is offered an interface of three stages, the _Collection_ view, the _Ca
 The _Collection_ view presents a cloud-like collage of closeups. Each closeup represents one occuring tag. Their spatial arrangement is based on topic, their size on the frequency of the depicted tag within the collection. Over time the depictions change, always creating a different random collage.
 
 {:.m-image__fullwidth}
-![Leuchttisch: Collection Collages]({{site.baseurl}}/img/leuchttisch_collection_collage.jpg)
+![Leuchttisch: Collection Collages]({{site.baseurl}}/img/leuchttisch_general-cloud.jpg)
 
 Selecting a closeup, and therefore a tag, opens the _Category_ view that appears as a traditional image grid, displaying all closeups referring to the selected tag.
 

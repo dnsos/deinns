@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Various works
+title: Various Works
 subtitle:
 ref: various
 permalink: "/various-works/"
@@ -9,7 +9,7 @@ excerpt: University Projects
 external-link:
 year: 2015/2016
 role: Concept, Design
-tools: P5.js
+tools: 
 team:
 color-primary: '#fcc7d3'
 order: 1
