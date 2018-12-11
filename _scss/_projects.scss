@@ -123,7 +123,7 @@
             grid-column: 1 / 13;
             padding: calc(var(--grid-spacing) / 2);
             margin: 0 0 var(--grid-spacing);
-            font-style: italic;
+            font-style: normal;
             border: .2rem solid var(--color-grey-07);
         }
         @media (min-width: 850px) {
