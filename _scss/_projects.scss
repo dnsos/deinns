@@ -74,12 +74,23 @@
           }
         }
 
-        h1 {
-          margin-bottom: 0;
-        }
+        .c-project__meta {
 
-        p {
-          font-style: italic;
+          h1 {
+            margin-bottom: 0;
+          }
+  
+          h2 {
+            font-weight: 400;
+            font-style: italic;
+          }
+
+          a::after {
+            content: url("/img/ic_link.svg");
+            display: inline-block;
+            width: 1.2rem;
+            margin-left: .5rem;
+          }
         }
 
         dl {

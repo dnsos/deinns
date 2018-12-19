@@ -8,41 +8,40 @@ layout: default
 
   <header class="c-project__header">
     <section class="c-project__meta">
-        <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
-        <p>{{page.excerpt}}</p>
-        <dl>
-          <div>
-            <dt>Year:</dt>
-            <dd>{{page.year}}</dd>
-          </div>
-          <div>
-            <dt>Role:</dt>
-            <dd>{{page.role}}</dd>
-          </div>
-          {% if page.team %}
-          <div>
-            <dt>Team:</dt>
-            <dd>{{page.team}}</dd>
-          </div>
-          {% endif %}
-          {% if page.tools %}
-          <div>
-            <dt>Tools:</dt>
-            <dd>
-              {% assign tools = page.tools | split: "," %}
-                {% for tool in tools %}
-                  <span>{{tool}}</span>
-                {% endfor %}
-            </dd>
-          </div>
-          {% endif %}
-          {% if page.external-link %}
-          <div>
-            <dt>Link:</dt>
-            <dd><a href="https://{{page.external-link}}">{{page.external-link}}</a></dd>
-          </div>
-          {% endif %}
-        </dl>
+        <hgroup>
+            <h1>{{page.title}}{% if page.subtitle %} – {{page.subtitle}}{% endif %}</h1>
+            <h2>{{page.excerpt}}</h2>
+        </hgroup>
+      <dl>
+        <div>
+          <dt>Year:</dt>
+          <dd>{{page.year}}</dd>
+        </div>
+        <div>
+          <dt>Role:</dt>
+          <dd>{{page.role}}</dd>
+        </div>
+        {% if page.team %}
+        <div>
+          <dt>Team:</dt>
+          <dd>{{page.team}}</dd>
+        </div>
+        {% endif %}
+        {% if page.tools %}
+        <div>
+          <dt>Tools:</dt>
+          <dd>
+            {% assign tools = page.tools | split: "," %}
+            {% for tool in tools %}
+            <span>{{tool}}</span>
+            {% endfor %}
+          </dd>
+        </div>
+        {% endif %}
+      </dl>
+      {% if page.external-link %}
+      <p><a href="https://{{page.external-link}}">Visit Project</a></p>
+      {% endif %}
     </section>
   </header>
 
