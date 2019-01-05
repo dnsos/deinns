@@ -10,6 +10,7 @@ external-link: imueberflutetenberlin.github.io
 year: 2017
 role: Research, Concept, Design, Web Development
 tools: QGIS, Carto, Leaflet.js
+supervision: Prof. Myriel Milicevic
 color-primary: '#cac9d7'
 order: 3
 ---

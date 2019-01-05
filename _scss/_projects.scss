@@ -97,18 +97,19 @@
             div {
                 display: grid;
                 grid-gap: .5rem;
-                grid-template-columns: minmax(6rem, 1fr) 11fr;
+                grid-template-columns: minmax(8rem, 1fr) 11fr;
                 grid-template-areas: 
                 "type content";
                 line-height: 1.85;
                 dt {
                 grid-area: type;
-                font-weight: 700;
+                font-size: calc(var(--font-size-base) - .3rem);
+                line-height: 2;
                 }
                 dd {
                 grid-area: content;
                     span {
-                    padding: .2rem .5rem;
+                    padding: .1rem .5rem;
                     border: .2rem solid var(--color-grey-07);
                     }
                 }

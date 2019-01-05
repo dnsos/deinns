@@ -11,6 +11,7 @@ year: 2018
 role: Concept, Design, Web Development
 tools: Pixi.js, D3.js
 team: Pauline Junginger (Research, Concept), Barbara Avila Vissirini (Concept, Design), Anastasia Voloshina (Concept, Design)
+supervision: Prof. Marian Dörk
 color-primary: '#f7c29c'
 order: 4
 ---

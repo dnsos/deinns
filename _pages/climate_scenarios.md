@@ -10,6 +10,7 @@ year: 2018
 role: Concept, Design, Web Development
 tools: D3.js
 team: Hannah Schwan (Concept, Design)
+supervision: Prof. Boris Müller
 color-primary: '#f1f457'
 order: 5
 ---
@@ -48,4 +49,4 @@ Hovering a bar displays a __tooltip__ with detailed information about the variab
 {:.m-image__fullwidth .m-image__border}
 ![Climate Scenarios Viewer: Mouseover]({{site.baseurl}}/img/vks_general-mouseover.png)
 
-_Note: This tool is an experimental prototype and needs to be evaluated for its validity. It may undergo further revision._
+_Note: This tool is an experimental prototype and will undergo further revision._

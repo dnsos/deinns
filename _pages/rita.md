@@ -11,6 +11,7 @@ year: 2016/2017
 role: Research, Concept, Illustration, Web Development
 tools: Jekyll
 team: Marlo Tristan Probst (Research)
+supervision: Prof. Myriel Milicevic and others
 color-primary: '#fccbc7'
 order: 2
 ---
