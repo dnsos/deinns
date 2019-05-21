@@ -1,9 +1,9 @@
 ---
 layout: project
-title: Leuchttisch
+title: Close-up Cloud
 subtitle: 
 ref: leuchttisch
-permalink: "/leuchttisch/"
+permalink: "/close-up-cloud/"
 tag: project
 excerpt: Collection Exploration Concept
 external-link: 
