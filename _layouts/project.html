@@ -48,6 +48,9 @@ layout: default
       {% if page.external-link %}
       <p><a href="https://{{page.external-link}}">Visit Project</a></p>
       {% endif %}
+      {% if page.exhibition-link %}
+      <p><a href="https://{{page.exhibition-link}}">{{page.exhibition-note}}</a></p>
+      {% endif %}
     </section>
   </header>
 

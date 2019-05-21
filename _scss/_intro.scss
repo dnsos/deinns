@@ -7,6 +7,12 @@
     .c-intro {
       position: fixed;
       top: 8rem;
+      max-width: 14rem;
+    }
+  }
+
+  @media (min-width: 1100px) {
+    .c-intro {
       max-width: 20rem;
     }
   }
