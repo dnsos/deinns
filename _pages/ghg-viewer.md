@@ -14,7 +14,7 @@ role: Concept, Design, Text, Development
 tools: D3.js, Vue.js
 supervision: 
 color-primary: '#79cde5'
-order: 6
+order: 5
 ---
 
 {:.m-image__fullwidth}
