@@ -7,7 +7,7 @@ permalink: "/the-eu-and-its-greenhouse-gas-emissions/"
 tag: project
 excerpt: Visual Data Essay
 external-link: ghg-emissions-viewer.netlify.com
-exhibition-link: vizknowledge.aalto.fi/showcase/
+exhibition-link: vizknowledge.aalto.fi/archive/2019/showcase/
 exhibition-note: Featured in the 2019 Visualizing Knowledge conference in Helsinki
 year: 2019
 role: Concept, Design, Text, Development
